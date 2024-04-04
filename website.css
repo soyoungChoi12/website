@@ -1,0 +1,208 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    padding-left : 200px;
+    padding-right : 100px;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  } /* 요소가 가운데에 올 수 있도록 */
+  
+  /* nav bar*/
+  
+  .lang-select{
+    margin: 0px;
+    text-align: end;
+    flex-grow: 14;
+  }
+  
+  .lang-select-menu{
+    border: 0px;
+    color: #797979;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  a.sign-up, a.sign-in {
+    color: #797979;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: end;
+    flex-grow: 1;
+  }
+
+.menu{
+    list-style: none;    
+    width : 900px;
+    margin : 0 auto;
+}
+.menu ul{
+    list-style: none;
+    border : 2px solid #ffffff;
+    border-radius: 10px;
+    height : 40px;  
+}
+.menu ul li{   
+    float : left;
+    margin-top: 10px;
+    padding-right : 30px;
+    height: 20px;
+}
+.menu ul li a{
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    text-align : center;
+    padding : 1px 10px 3px 10px;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    background-color: #0099ff;
+    color : white;
+}
+
+
+.detail {
+    list-style: none;
+    width: 200px;
+}
+
+.icon-group {
+    display: flex;
+    gap: 30px; /* 두 묶음 사이의 간격 */
+    margin-bottom: 20px;
+}
+
+.Icon {
+    display: flex;
+    flex-direction: column; /* 아이콘과 텍스트를 수직으로 배치 */
+    align-items: center; /* 수직 가운데 정렬 */
+    padding-right : 10px;
+}
+
+.Icon img {
+    width: 20px; /* 이미지 크기 조정 */
+    height: 20px;
+    vertical-align: middle; /* 아이콘이 텍스트의 중앙에 오도록 설정 */
+}
+
+.Icon span {
+    font-size: 10px; /* 텍스트 크기 조정 */
+    color: #515151; /* 텍스트 색상 지정 */
+}
+
+
+.slider {
+    width: 100%;
+    overflow: hidden; /* 넘치는 이미지를 숨김 */
+    position: relative; /* 상대 위치 지정 */
+}
+
+.slides {
+    display: flex; /* 이미지들을 가로로 나열하기 위해 Flexbox 사용 */
+    transition: transform 0.5s ease; /* 슬라이드 전환 효과 설정 */
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.text1 {
+    font-size: 25px;
+    font-weight: bold;
+    display: block; /* 요소를 블록 요소로 지정하여 가로폭을 꽉 채우도록 합니다. */
+    text-align: center; /* 텍스트를 가운데 정렬합니다. */
+    margin-top: 70px; /* 위쪽 여백을 설정합니다. */
+    padding-bottom: 30px
+}
+
+.Search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Search input[type="text"] {
+    flex: 0.5;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Search button {
+    padding: 30px 30px;
+    background-color: #002b5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.Search button:hover {
+    background-color: #0056b3;
+}
+
+.text2{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left : 200px;
+    padding-right : 100px;
+    padding-top: 60px;
+}
+
+.text3{
+    font-size: 15px;
+    color: #515151;
+    padding-left : 200px;
+    padding-right : 100px;
+}
+
+.image-container {
+    width: 300px; /* 틀의 너비 */
+    height: 200px; /* 틀의 높이 */
+    border: 1px solid #ccc; /* 얇은 선 스타일 설정 */
+    border-radius: 10px; /* 틀의 둥근 경계 반경 */
+    overflow: hidden; /* 넘치는 이미지를 잘라내도록 함 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+  }
+  
+  .image-container img {
+    width: 100%; /* 이미지가 틀의 너비를 채우도록 설정 */
+    height: 100%; /* 이미지가 틀의 높이를 채우도록 설정 */
+    object-fit: cover; /* 이미지가 잘리지 않고 틀에 맞춰질 수 있도록 설정 */
+  }
